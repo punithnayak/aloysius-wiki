@@ -1,0 +1,76 @@
+{
+	"name": "HelloAloysius",
+	"version": "1.0.0",
+	"author": "Punith",
+	"url": "https://www.mediawiki.org/wiki/Manual:Developing_extensions",
+	"descriptionmsg": "helloaloysius-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.42.0"
+	},
+	"AutoloadClasses": {
+		"HelloHooks": "includes/HelloHooks.php",
+		"SpecialHello": "includes/SpecialHello.php"
+	},
+	"HookHandlers": {
+		"main": {
+			"class": "HelloHooks",
+			"services": [
+				"UserEditTracker"
+			]
+		}
+	},
+	"Hooks": {
+		"BeforePageDisplay": "main",
+		"PageSaveComplete": "main"
+	},
+	"SpecialPages": {
+		"Hello": "SpecialHello"
+	},
+	"MessagesDirs": {
+		"HelloAloysius": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"HelloAloysiusAlias": "HelloAloysius.alias.php"
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "HelloAloysius/modules"
+	},
+	"ResourceModules": {
+		"ext.helloAloysius": {
+			"packageFiles": [
+				"ext.helloAloysius.js"
+			],
+			"styles": [
+				"ext.helloAloysius.css"
+			],
+			"messages": [
+				"helloaloysius-saved-title",
+				"helloaloysius-created-title",
+				"helloaloysius-saved-body",
+				"helloaloysius-hook-note"
+			],
+			"dependencies": [
+				"mediawiki.language"
+			]
+		},
+		"ext.helloAloysius.special": {
+			"packageFiles": [
+				"ext.helloAloysius.special.js"
+			],
+			"dependencies": [
+				"mediawiki.language"
+			]
+		},
+		"ext.helloAloysius.special.styles": {
+			"styles": [
+				"ext.helloAloysius.special.css"
+			]
+		}
+	},
+	"manifest_version": 2
+}
