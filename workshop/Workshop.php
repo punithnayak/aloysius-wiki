@@ -24,6 +24,7 @@ $wgDefaultSkin = 'vector-2022';
 wfLoadExtension( 'HelloAloysius' );   // greeting chip, save celebration, Special:Hello
 wfLoadExtension( 'WikiPulse' );       // Special:WikiPulse: every Wikipedia edit, live
 wfLoadExtension( 'Countdown' );       // new wikitext tag: <countdown to="...">
+// wfLoadExtension( 'Rangoli' );     // ✏️ Tutorial 2: remove the // once you have built it
 
 // ✏️ 5. Who can edit? Remove the // to make only logged-in users edit.
 // $wgGroupPermissions['*']['edit'] = false;
