@@ -1,0 +1,31 @@
+{
+	"name": "Rangoli",
+	"author": "Your Name",
+	"version": "1.0.0",
+	"descriptionmsg": "rangoli-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"AutoloadClasses": {
+		"RangoliHooks": "includes/RangoliHooks.php"
+	},
+	"HookHandlers": {
+		"main": { "class": "RangoliHooks" }
+	},
+	"Hooks": {
+		"BeforePageDisplay": "main"
+	},
+	"MessagesDirs": {
+		"Rangoli": [ "i18n" ]
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "Rangoli/modules"
+	},
+	"ResourceModules": {
+		"ext.rangoli": {
+			"styles": [ "rangoli.css" ],
+			"packageFiles": [ "rangoli.js" ]
+		}
+	},
+	"manifest_version": 2
+}
