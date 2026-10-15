@@ -1,0 +1,52 @@
+{
+	"name": "WikiPulse",
+	"version": "1.0.0",
+	"author": "Punith",
+	"url": "https://wikitech.wikimedia.org/wiki/Event_Platform/EventStreams_HTTP_Service",
+	"descriptionmsg": "wikipulse-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "specialpage",
+	"requires": {
+		"MediaWiki": ">= 1.42.0"
+	},
+	"AutoloadClasses": {
+		"SpecialWikiPulse": "includes/SpecialWikiPulse.php"
+	},
+	"SpecialPages": {
+		"WikiPulse": "SpecialWikiPulse"
+	},
+	"MessagesDirs": {
+		"WikiPulse": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"WikiPulseAlias": "WikiPulse.alias.php"
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "WikiPulse/modules"
+	},
+	"ResourceModules": {
+		"ext.wikiPulse": {
+			"packageFiles": [
+				"ext.wikiPulse.js"
+			],
+			"dependencies": [
+				"mediawiki.language"
+			],
+			"messages": [
+				"wikipulse-connecting",
+				"wikipulse-live",
+				"wikipulse-offline",
+				"wikipulse-by"
+			]
+		},
+		"ext.wikiPulse.styles": {
+			"styles": [
+				"ext.wikiPulse.css"
+			]
+		}
+	},
+	"manifest_version": 2
+}
