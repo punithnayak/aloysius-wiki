@@ -32,15 +32,12 @@ else
   docker run -d --name "$NAME" -p "$PORT:80" \
     -v "$PWD/data:/var/www/data" \
     -v "$PWD/workshop:/var/www/html/workshop" \
-    -v "$PWD/extensions/HelloAloysius:/var/www/html/extensions/HelloAloysius" \
-    -v "$PWD/extensions/WikiPulse:/var/www/html/extensions/WikiPulse" \
-    -v "$PWD/extensions/Countdown:/var/www/html/extensions/Countdown" \
+    -v "$PWD/extensions:/var/www/html/extensions" \
     "$IMAGE" >/dev/null
 fi
 
 # Same again from inside the container (works whoever owns the files)
-docker exec "$NAME" chmod -R a+rX /var/www/html/workshop \
-  /var/www/html/extensions/HelloAloysius /var/www/html/extensions/WikiPulse /var/www/html/extensions/Countdown
+docker exec "$NAME" chmod -R a+rX /var/www/html/workshop /var/www/html/extensions
 if ! docker exec -u www-data "$NAME" test -r /var/www/html/workshop/Workshop.php; then
   echo "❌ MediaWiki cannot read workshop/Workshop.php. Run: sudo chmod -R a+rX workshop extensions"
   exit 1

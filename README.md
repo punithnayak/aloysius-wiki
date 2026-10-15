@@ -2,13 +2,17 @@
 
 Your own copy of **MediaWiki**, the software that runs Wikipedia, with three extensions built at the **St Aloysius MediaWiki workshop**. Change the title, the logo or the code, and watch your wiki change.
 
-## Start it in your browser (Google sign-in, nothing to install)
+## Tutorial 1: your own wiki, in your browser (Google sign-in, nothing to install)
 
 [![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://shell.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/punithnayak/aloysius-wiki&cloudshell_tutorial=tutorial.md&show=ide%2Cterminal)
 
 1. Click the button and sign in with your Google account. Trust the repo when asked.
 2. Follow the steps on the right. You'll run `bash start.sh`, then click **Web Preview → Preview on port 8080**.
 3. Log in as **Admin** / **aloysius2026**.
+
+**Tutorial 2: build your own extension.** Make a colourful extension called Rangoli from an empty folder:
+
+[![Open Tutorial 2 in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://shell.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/punithnayak/aloysius-wiki&cloudshell_tutorial=build-extension.md&show=ide%2Cterminal)
 
 Google Cloud Shell is free with a personal Google account. Some college accounts block it; use your personal Gmail if so.
 
@@ -46,6 +50,8 @@ workshop/
   Workshop.php    YOUR settings: name, logo, skin, extensions
   logo.png        your logo
   pages/          the demo pages added on first start
+solutions/
+  Rangoli/        the finished Tutorial 2 extension, if you get stuck
 extensions/
   HelloAloysius/  greeting chip, save celebration, Special:Hello
   WikiPulse/      Special:WikiPulse
