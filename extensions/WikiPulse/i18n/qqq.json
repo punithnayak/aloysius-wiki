@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [ "Punith" ]
+	},
+	"wikipulse-desc": "{{desc|name=WikiPulse|url=https://wikitech.wikimedia.org/wiki/Event_Platform/EventStreams_HTTP_Service}}",
+	"wikipulse": "{{doc-special|WikiPulse}}",
+	"wikipulse-title": "Main heading of the page.",
+	"wikipulse-subtitle": "Line under the heading.",
+	"wikipulse-connecting": "Status while connecting to the stream.",
+	"wikipulse-live": "Status once edits are arriving.",
+	"wikipulse-offline": "Status when the stream cannot be reached.",
+	"wikipulse-stat-rate": "Label: edits per minute.",
+	"wikipulse-stat-total": "Label: edits seen since the page opened.",
+	"wikipulse-stat-wikis": "Label: number of different wikis seen.",
+	"wikipulse-stat-bytes": "Label: total bytes added.",
+	"wikipulse-filter-all": "Filter button: all wikis.",
+	"wikipulse-filter-en": "Filter button: English Wikipedia.",
+	"wikipulse-filter-kn": "Filter button: Kannada Wikipedia. Keep it in Kannada script.",
+	"wikipulse-filter-tcy": "Filter button: Tulu Wikipedia. Keep it in Kannada script.",
+	"wikipulse-filter-wikidata": "Filter button: Wikidata.",
+	"wikipulse-hidebots": "Checkbox label.",
+	"wikipulse-legend-add": "Legend: green bubbles.",
+	"wikipulse-legend-del": "Legend: red bubbles.",
+	"wikipulse-legend-new": "Legend: purple bubbles.",
+	"wikipulse-feed": "Heading of the list of latest edits.",
+	"wikipulse-top": "Heading of the list of busiest wikis.",
+	"wikipulse-by": "Who made the edit.\n\nParameters:\n* $1 - username",
+	"wikipulse-footnote": "Footnote naming the data source."
+}

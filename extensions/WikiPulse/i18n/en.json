@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [ "Punith" ]
+	},
+	"wikipulse-desc": "Shows every edit on every Wikimedia wiki, live, at [[Special:WikiPulse]].",
+	"wikipulse": "WikiPulse",
+	"wikipulse-title": "Wikipedia, live",
+	"wikipulse-subtitle": "Every bubble is a real edit, made by a real person somewhere in the world, right now.",
+	"wikipulse-connecting": "Connecting…",
+	"wikipulse-live": "Live",
+	"wikipulse-offline": "Offline. Check your internet connection.",
+	"wikipulse-stat-rate": "Edits per minute",
+	"wikipulse-stat-total": "Edits seen",
+	"wikipulse-stat-wikis": "Wikis",
+	"wikipulse-stat-bytes": "Bytes added",
+	"wikipulse-filter-all": "All wikis",
+	"wikipulse-filter-en": "English",
+	"wikipulse-filter-kn": "ಕನ್ನಡ",
+	"wikipulse-filter-tcy": "ತುಳು",
+	"wikipulse-filter-wikidata": "Wikidata",
+	"wikipulse-hidebots": "Hide bots",
+	"wikipulse-legend-add": "Text added",
+	"wikipulse-legend-del": "Text removed",
+	"wikipulse-legend-new": "New page",
+	"wikipulse-feed": "Latest edits",
+	"wikipulse-top": "Busiest wikis",
+	"wikipulse-by": "by $1",
+	"wikipulse-footnote": "Data: Wikimedia [https://stream.wikimedia.org/v2/ui/#/?streams=mediawiki.recentchange EventStreams]. The same RecentChanges data you saw in the API, pushed to your browser the moment it happens."
+}
