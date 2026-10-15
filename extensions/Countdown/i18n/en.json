@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [ "Punith" ]
+	},
+	"countdown-desc": "Adds a <code>&lt;countdown&gt;</code> tag that shows a live countdown to any date.",
+	"countdown-days": "days",
+	"countdown-hours": "hours",
+	"countdown-minutes": "minutes",
+	"countdown-seconds": "seconds",
+	"countdown-done": "It's time! 🎉",
+	"countdown-error": "Countdown: add a date, like <countdown to=\"2026-10-17 09:30 +05:30\">"
+}

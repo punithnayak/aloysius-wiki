@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [ "Punith" ]
+	},
+	"countdown-days": "ದಿನ",
+	"countdown-hours": "ಗಂಟೆ",
+	"countdown-minutes": "ನಿಮಿಷ",
+	"countdown-seconds": "ಸೆಕೆಂಡ್",
+	"countdown-done": "ಸಮಯ ಬಂತು! 🎉"
+}

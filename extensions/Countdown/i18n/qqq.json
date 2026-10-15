@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [ "Punith" ]
+	},
+	"countdown-desc": "{{desc|name=Countdown|url=https://www.mediawiki.org/wiki/Manual:Tag_extensions}}",
+	"countdown-days": "Label under the number of days.",
+	"countdown-hours": "Label under the number of hours.",
+	"countdown-minutes": "Label under the number of minutes.",
+	"countdown-seconds": "Label under the number of seconds.",
+	"countdown-done": "Shown when the countdown reaches zero.",
+	"countdown-error": "Shown when the tag has no valid date."
+}
