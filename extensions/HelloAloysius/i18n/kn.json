@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [ "Punith" ]
+	},
+	"hello": "ನಮಸ್ಕಾರ",
+	"helloaloysius-greeting": "ನಮಸ್ಕಾರ, $1!",
+	"helloaloysius-subtitle": "{{SITENAME}} ನಲ್ಲಿ ಈಗ ಏನು ನಡೆಯುತ್ತಿದೆ ನೋಡಿ.",
+	"helloaloysius-random": "ಯಾವುದಾದರೂ ಒಂದು ಪುಟಕ್ಕೆ ಕರೆದೊಯ್ಯಿ",
+	"helloaloysius-stat-articles": "ಲೇಖನಗಳು",
+	"helloaloysius-stat-edits": "ಸಂಪಾದನೆಗಳು",
+	"helloaloysius-stat-users": "ಬಳಕೆದಾರರು",
+	"helloaloysius-stat-youredits": "ನಿಮ್ಮ ಸಂಪಾದನೆಗಳು",
+	"helloaloysius-recent-title": "ಇತ್ತೀಚಿನ ಸಂಪಾದನೆಗಳು",
+	"helloaloysius-recent-empty": "ಇನ್ನೂ ಯಾವುದೇ ಸಂಪಾದನೆ ಇಲ್ಲ. ನೀವೇ ಮೊದಲಿಗರಾಗಿ!",
+	"helloaloysius-readtime": "$1 ನಿಮಿಷದ ಓದು",
+	"helloaloysius-words": "$1 ಪದಗಳು",
+	"helloaloysius-saved-title": "ಸಂಪಾದನೆ ಉಳಿಸಲಾಗಿದೆ!",
+	"helloaloysius-created-title": "ಹೊಸ ಪುಟ ರಚಿಸಲಾಗಿದೆ!",
+	"helloaloysius-saved-body": "ಇದು ನಿಮ್ಮ $1ನೇ ಸಂಪಾದನೆ. ಧನ್ಯವಾದಗಳು!"
+}

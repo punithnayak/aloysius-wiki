@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [ "Punith" ]
+	},
+	"helloaloysius-desc": "{{desc|name=HelloAloysius|url=https://www.mediawiki.org/wiki/Manual:Developing_extensions}}",
+	"hello": "{{doc-special|Hello}}",
+	"helloaloysius-greeting": "Greeting at the top of articles and on Special:Hello.\n\nParameters:\n* $1 - the username, or \"Aloysius\" for logged-out readers",
+	"helloaloysius-subtitle": "Line under the greeting on Special:Hello.",
+	"helloaloysius-random": "Button that opens a random article.",
+	"helloaloysius-stat-articles": "Label under the number of articles.",
+	"helloaloysius-stat-edits": "Label under the total number of edits.",
+	"helloaloysius-stat-users": "Label under the number of registered users.",
+	"helloaloysius-stat-youredits": "Label under the reader's own edit count.",
+	"helloaloysius-recent-title": "Heading above the list of latest edits.",
+	"helloaloysius-recent-empty": "Shown when the wiki has no edits yet.",
+	"helloaloysius-footnote": "Small note at the bottom of Special:Hello, for workshop students.",
+	"helloaloysius-readtime": "Estimated reading time.\n\nParameters:\n* $1 - number of minutes",
+	"helloaloysius-words": "Number of words on the page.\n\nParameters:\n* $1 - number of words",
+	"helloaloysius-saved-title": "Title of the card shown after saving an edit.",
+	"helloaloysius-created-title": "Title of the card shown after creating a new page.",
+	"helloaloysius-saved-body": "Body of the card shown after saving.\n\nParameters:\n* $1 - the user's total edit count",
+	"helloaloysius-hook-note": "Small note on the save card, naming the hook that made it appear."
+}

@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [ "Punith" ]
+	},
+	"helloaloysius-desc": "A friendly workshop extension: a greeting on every article, reading time, a save celebration and [[Special:Hello]].",
+	"hello": "Hello",
+	"helloaloysius-greeting": "Hello, $1!",
+	"helloaloysius-subtitle": "Here is what is happening on {{SITENAME}} right now.",
+	"helloaloysius-random": "Take me somewhere random",
+	"helloaloysius-stat-articles": "Articles",
+	"helloaloysius-stat-edits": "Edits",
+	"helloaloysius-stat-users": "Users",
+	"helloaloysius-stat-youredits": "Your edits",
+	"helloaloysius-recent-title": "Latest edits",
+	"helloaloysius-recent-empty": "No edits yet. Be the first!",
+	"helloaloysius-footnote": "This page has no wikitext. It is built fresh by includes/SpecialHello.php every time you open it.",
+	"helloaloysius-readtime": "$1 min read",
+	"helloaloysius-words": "$1 words",
+	"helloaloysius-saved-title": "Edit saved!",
+	"helloaloysius-created-title": "New page created!",
+	"helloaloysius-saved-body": "That is edit number $1. Thank you!",
+	"helloaloysius-hook-note": "Shown by the PageSaveComplete hook"
+}
