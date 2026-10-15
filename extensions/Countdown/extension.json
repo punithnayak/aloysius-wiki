@@ -1,0 +1,40 @@
+{
+	"name": "Countdown",
+	"version": "1.0.0",
+	"author": "Punith",
+	"url": "https://www.mediawiki.org/wiki/Manual:Tag_extensions",
+	"descriptionmsg": "countdown-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.42.0"
+	},
+	"AutoloadClasses": {
+		"CountdownHooks": "includes/CountdownHooks.php"
+	},
+	"HookHandlers": {
+		"main": {
+			"class": "CountdownHooks"
+		}
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "main"
+	},
+	"MessagesDirs": {
+		"Countdown": [ "i18n" ]
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "Countdown/modules"
+	},
+	"ResourceModules": {
+		"ext.countdown": {
+			"packageFiles": [ "ext.countdown.js" ],
+			"dependencies": [ "mediawiki.language" ]
+		},
+		"ext.countdown.styles": {
+			"styles": [ "ext.countdown.css" ]
+		}
+	},
+	"manifest_version": 2
+}
