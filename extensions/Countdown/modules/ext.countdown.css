@@ -1,0 +1,71 @@
+.cd {
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	max-width: 100%;
+	box-sizing: border-box;
+	margin: 8px 0 16px;
+	padding: 22px 26px 18px;
+	border-radius: 22px;
+	color: #fff;
+	text-align: center;
+	font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+	box-shadow: 0 16px 40px rgba( 0, 0, 0, 0.25 );
+	isolation: isolate;
+}
+.cd-sunset { background: linear-gradient( 120deg, #121a2b, #5b2a86 55%, #e0661f ); }
+.cd-ocean { background: linear-gradient( 120deg, #062a4a, #0b6e8a 55%, #19c3b4 ); }
+.cd-night { background: linear-gradient( 120deg, #05060b, #1b2140 60%, #3a3f7a ); }
+.cd::after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	inset: -50%;
+	background: conic-gradient( from 0deg, transparent, rgba( 255, 255, 255, 0.12 ), transparent 30% );
+	animation: cd-spin 8s linear infinite;
+}
+.cd-title { font-size: 1.15em; font-weight: 700; margin-bottom: 12px; }
+.cd-title a { color: #ffd9c2; }
+.cd-units { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
+.cd-unit {
+	min-width: 74px;
+	padding: 10px 8px 8px;
+	border-radius: 14px;
+	background: rgba( 255, 255, 255, 0.1 );
+	box-shadow: inset 0 0 0 1px rgba( 255, 255, 255, 0.15 );
+	backdrop-filter: blur( 4px );
+}
+.cd-num {
+	display: block;
+	font-size: 2.4em;
+	font-weight: 800;
+	line-height: 1;
+	font-variant-numeric: tabular-nums;
+}
+.cd-num.is-tick { animation: cd-tick 0.45s cubic-bezier( 0.2, 1.4, 0.4, 1 ); }
+.cd-label {
+	display: block;
+	margin-top: 4px;
+	font-size: 0.72em;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	opacity: 0.75;
+}
+.cd-when { margin-top: 12px; font-size: 0.8em; opacity: 0.7; }
+.cd.is-done .cd-units { display: none; }
+.cd-done-text {
+	font-size: 2em;
+	font-weight: 800;
+	animation: cd-tick 0.8s cubic-bezier( 0.2, 1.4, 0.4, 1 ), cd-glow 1.6s ease-in-out infinite alternate;
+}
+
+@keyframes cd-spin { to { transform: rotate( 360deg ); } }
+@keyframes cd-tick {
+	0% { transform: translateY( -40% ) scale( 0.8 ); opacity: 0; }
+	100% { transform: none; opacity: 1; }
+}
+@keyframes cd-glow { to { text-shadow: 0 0 18px rgba( 255, 255, 255, 0.8 ); } }
+
+@media ( prefers-reduced-motion: reduce ) {
+	.cd::after, .cd-num.is-tick, .cd-done-text { animation: none; }
+}
