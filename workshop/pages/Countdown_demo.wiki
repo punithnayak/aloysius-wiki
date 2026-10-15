@@ -1,0 +1,10 @@
+This page uses a new wikitext tag made by the '''Countdown''' extension. Click '''Edit''' to see how it is written.
+
+<countdown to="2026-10-17 09:30 +05:30">Day 2 of the workshop starts in</countdown>
+
+<countdown to="2026-12-31 23:59:59 +05:30" theme="ocean">New Year's Eve</countdown>
+
+<countdown to="2020-01-01" theme="night" done="Already happened!">An old date</countdown>
+
+== Make your own ==
+Copy one of the lines above and change the date, the text, or the theme (<code>sunset</code>, <code>ocean</code> or <code>night</code>).

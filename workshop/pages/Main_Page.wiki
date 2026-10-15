@@ -1,0 +1,40 @@
+<div style="padding:24px 28px;border-radius:20px;background:linear-gradient(120deg,#121a2b,#5b2a86 60%,#e0661f);color:#fff;margin-bottom:20px">
+<span style="font-size:2em;font-weight:800">Welcome to your own wiki! 👋</span>
+
+This is a real MediaWiki, the same software that runs Wikipedia. It is yours: nothing you do here can break anything else.
+</div>
+
+== 1. See the extensions ==
+* [[Special:Hello]]: a page built by PHP code, with live numbers from the database
+* [[Special:WikiPulse]]: every edit on every Wikipedia, live, as bubbles
+* [[Countdown demo]]: a brand-new wikitext tag, <code><nowiki><countdown></nowiki></code>
+* [[Mangaluru]]: an article with the greeting chip and reading time at the top
+
+== 2. Make an edit ==
+Open [[Mangaluru]], click '''Edit''', add a line, and click '''Save'''. Watch the bottom-right corner: that card comes from a ''hook'' called <code>PageSaveComplete</code>.
+
+== 3. Change the code ==
+Open the editor (left side of Cloud Shell) and try these. Save the file, then refresh this page.
+
+{| class="wikitable"
+! Change !! File !! What to do
+|-
+| Wiki name || <code>workshop/Workshop.php</code> || Change <code>$wgSitename</code>
+|-
+| Logo || <code>workshop/logo.png</code> || Replace the picture, or point <code>$wgLogos</code> at another image
+|-
+| Look || <code>workshop/Workshop.php</code> || Set <code>$wgDefaultSkin</code> to <code>'monobook'</code> or <code>'timeless'</code>
+|-
+| Save message || <code>extensions/HelloAloysius/i18n/en.json</code> || Change <code>"Edit saved!"</code> to anything you like
+|-
+| Kannada text || <code>extensions/HelloAloysius/i18n/kn.json</code> || Then open any page with <code>?uselang=kn</code>
+|-
+| Countdown colours || <code>extensions/Countdown/modules/ext.countdown.css</code> || Change the colours in <code>.cd-sunset</code>
+|-
+| Switch an extension off || <code>workshop/Workshop.php</code> || Put <code>//</code> in front of its <code>wfLoadExtension</code> line
+|}
+
+== 4. Change text without code ==
+Every message can be changed from the wiki itself. Edit [[MediaWiki:Helloaloysius-saved-title]], write something new, save, then make another edit somewhere. Your new text appears on the card.
+
+''Log in as '''Admin''' with the password from the start screen to do this.''
