@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [ "Your Name" ]
+	},
+	"rangoli-desc": "Adds a colourful banner to every article.",
+	"rangoli-hello": "Namaskara, $1! This banner comes from YOUR extension.",
+	"rangoli-button": "Celebrate ✨"
+}
