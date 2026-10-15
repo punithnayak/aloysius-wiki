@@ -10,9 +10,13 @@ Your own copy of **MediaWiki**, the software that runs Wikipedia, with three ext
 2. Follow the steps on the right. You'll run `bash start.sh`, then click **Web Preview → Preview on port 8080**.
 3. Log in as **Admin** / **aloysius2026**.
 
-**Tutorial 2: build your own extension.** Make a colourful extension called Rangoli from an empty folder:
+**Tutorial 2: your first user script.** Rainbow headings, your own menu links and a Party mode button, written on a wiki page:
 
-[![Open Tutorial 2 in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://shell.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/punithnayak/aloysius-wiki&cloudshell_tutorial=build-extension.md&show=ide%2Cterminal)
+[![Open Tutorial 2 in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://shell.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/punithnayak/aloysius-wiki&cloudshell_tutorial=user-script.md&show=ide%2Cterminal)
+
+**Tutorial 3: build your own extension.** Make a colourful extension called Rangoli from an empty folder:
+
+[![Open Tutorial 3 in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://shell.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/punithnayak/aloysius-wiki&cloudshell_tutorial=build-extension.md&show=ide%2Cterminal)
 
 Google Cloud Shell is free with a personal Google account. Some college accounts block it; use your personal Gmail if so.
 
@@ -51,7 +55,8 @@ workshop/
   logo.png        your logo
   pages/          the demo pages added on first start
 solutions/
-  Rangoli/        the finished Tutorial 2 extension, if you get stuck
+  userscript/     the finished Tutorial 2 user script
+  Rangoli/        the finished Tutorial 3 extension
 extensions/
   HelloAloysius/  greeting chip, save celebration, Special:Hello
   WikiPulse/      Special:WikiPulse

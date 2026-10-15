@@ -78,10 +78,10 @@ Every extension is just a folder. Open `extensions/Countdown` and read the files
 
 You ran MediaWiki, used three extensions, and changed both settings and extension code.
 
-**Next: build your own extension.** Run this to open Tutorial 2:
+**Next: write your first user script.** Run this to open Tutorial 2:
 
 ```sh
-cloudshell launch-tutorial build-extension.md
+cloudshell launch-tutorial user-script.md
 ```
 
 * Start again later: run `bash start.sh`
