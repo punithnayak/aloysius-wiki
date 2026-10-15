@@ -1,0 +1,107 @@
+/* ---------- Greeting chip at the top of every article ---------- */
+.hello-chip {
+	display: inline-flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 8px;
+	margin: 4px 0 16px;
+	padding: 7px 16px 7px 10px;
+	border-radius: 999px;
+	font-size: 0.9em;
+	color: #fff;
+	background: linear-gradient( 100deg, #121a2b 0%, #3a1f5d 55%, #b5471b 100% );
+	background-size: 200% 100%;
+	box-shadow: 0 6px 18px rgba( 181, 71, 27, 0.25 );
+	animation: hello-slide 6s ease-in-out infinite alternate, hello-pop 0.6s cubic-bezier( 0.2, 1.4, 0.4, 1 ) both;
+}
+.hello-chip-hi { font-weight: 600; }
+.hello-chip-dot { opacity: 0.5; }
+.hello-chip-wave {
+	display: inline-block;
+	font-size: 1.25em;
+	transform-origin: 70% 70%;
+	animation: hello-wave 2.2s ease-in-out 0.4s 2;
+}
+
+/* ---------- Reading progress bar ---------- */
+.hello-progress {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	height: 4px;
+	width: 100%;
+	transform-origin: 0 50%;
+	transform: scaleX( 0 );
+	background: linear-gradient( 90deg, #ff9a3c, #e0457b, #7b2ff7 );
+	box-shadow: 0 0 10px rgba( 224, 69, 123, 0.7 );
+	pointer-events: none;
+}
+
+/* ---------- Save celebration card ---------- */
+.hello-saved {
+	position: fixed;
+	right: 24px;
+	bottom: 24px;
+	z-index: 1001;
+	max-width: 320px;
+	padding: 18px 20px 16px 72px;
+	border-radius: 18px;
+	color: #fff;
+	background: linear-gradient( 135deg, #121a2b, #3a1f5d );
+	box-shadow: 0 18px 40px rgba( 18, 26, 43, 0.45 ), inset 0 0 0 1px rgba( 255, 255, 255, 0.08 );
+	animation: hello-rise 0.7s cubic-bezier( 0.2, 1.3, 0.4, 1 ) both;
+	cursor: pointer;
+}
+.hello-saved.is-leaving { animation: hello-sink 0.4s ease-in forwards; }
+.hello-saved-icon {
+	position: absolute;
+	left: 18px;
+	top: 16px;
+	font-size: 38px;
+	animation: hello-bounce 1s ease-in-out 0.5s 3;
+}
+.hello-saved-title { font-size: 1.15em; font-weight: 700; margin-bottom: 2px; }
+.hello-saved-count {
+	background: linear-gradient( 90deg, #ff9a3c, #ff6fa5 );
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	font-weight: 800;
+}
+.hello-saved-note {
+	margin-top: 8px;
+	font-family: monospace;
+	font-size: 0.75em;
+	opacity: 0.6;
+}
+.hello-burst {
+	position: fixed;
+	z-index: 1002;
+	font-size: 22px;
+	pointer-events: none;
+	animation: hello-fly 1.4s cubic-bezier( 0.2, 0.7, 0.3, 1 ) forwards;
+}
+
+/* ---------- Animations ---------- */
+@keyframes hello-slide { to { background-position: 100% 0; } }
+@keyframes hello-pop { from { opacity: 0; transform: translateY( -8px ) scale( 0.92 ); } }
+@keyframes hello-wave {
+	0%, 60%, 100% { transform: rotate( 0 ); }
+	10%, 30% { transform: rotate( 16deg ); }
+	20%, 40% { transform: rotate( -8deg ); }
+}
+@keyframes hello-rise { from { opacity: 0; transform: translateY( 40px ) scale( 0.9 ); } }
+@keyframes hello-sink { to { opacity: 0; transform: translateY( 30px ) scale( 0.95 ); } }
+@keyframes hello-bounce { 50% { transform: translateY( -8px ) rotate( -10deg ); } }
+@keyframes hello-fly {
+	to {
+		opacity: 0;
+		transform: translate( var( --dx ), var( --dy ) ) rotate( var( --rot ) ) scale( 0.6 );
+	}
+}
+
+@media ( prefers-reduced-motion: reduce ) {
+	.hello-chip, .hello-chip-wave, .hello-saved, .hello-saved-icon { animation: none; }
+	.hello-burst { display: none; }
+}

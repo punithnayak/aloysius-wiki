@@ -1,0 +1,161 @@
+/* ---------- Special:Hello dashboard ---------- */
+.hello-dash {
+	max-width: 880px;
+	margin: 8px 0 24px;
+}
+
+/* Hero */
+.hello-hero {
+	position: relative;
+	overflow: hidden;
+	padding: 36px 36px 32px;
+	border-radius: 24px;
+	color: #fff;
+	background: #121a2b;
+	isolation: isolate;
+}
+.hello-hero::before,
+.hello-hero::after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	width: 340px;
+	height: 340px;
+	border-radius: 50%;
+	filter: blur( 60px );
+	opacity: 0.75;
+	animation: hello-float 9s ease-in-out infinite alternate;
+}
+.hello-hero::before { background: #b5471b; top: -140px; right: -60px; }
+.hello-hero::after { background: #7b2ff7; bottom: -180px; left: 30%; animation-delay: -4s; }
+.hello-dash .hello-hero h2 {
+	margin: 4px 0 6px;
+	padding: 0;
+	border: 0;
+	font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+	font-size: 2.3em;
+	font-weight: 800;
+	line-height: 1.15;
+	color: #fff;
+	background: linear-gradient( 90deg, #fff 0%, #ffd1b3 50%, #f4b8ff 100% );
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.hello-hero p {
+	margin: 0 0 22px;
+	font-size: 1.1em;
+	color: rgba( 255, 255, 255, 0.78 );
+}
+.hello-wave {
+	display: inline-block;
+	font-size: 46px;
+	transform-origin: 70% 70%;
+	animation: hello-wave 2.4s ease-in-out 0.3s 3;
+}
+.hello-hero a.hello-btn {
+	display: inline-block;
+	padding: 10px 22px;
+	border-radius: 999px;
+	font-weight: 600;
+	color: #121a2b;
+	background: #fff;
+	text-decoration: none;
+	box-shadow: 0 8px 24px rgba( 0, 0, 0, 0.3 );
+	transition: transform 0.2s, box-shadow 0.2s;
+}
+.hello-hero a.hello-btn:hover {
+	transform: translateY( -2px ) scale( 1.03 );
+	box-shadow: 0 12px 30px rgba( 181, 71, 27, 0.5 );
+}
+
+/* Stat cards */
+.hello-stats {
+	display: grid;
+	grid-template-columns: repeat( auto-fit, minmax( 170px, 1fr ) );
+	gap: 14px;
+	margin: 18px 0;
+}
+.hello-card {
+	padding: 18px 20px;
+	border-radius: 18px;
+	background: rgba( 127, 127, 127, 0.07 );
+	box-shadow: inset 0 0 0 1px rgba( 127, 127, 127, 0.18 );
+	animation: hello-up 0.6s cubic-bezier( 0.2, 1.2, 0.4, 1 ) both;
+	animation-delay: calc( var( --i ) * 0.09s + 0.15s );
+	transition: transform 0.2s, box-shadow 0.2s;
+}
+.hello-card:hover {
+	transform: translateY( -3px );
+	box-shadow: inset 0 0 0 1px rgba( 181, 71, 27, 0.6 ), 0 10px 24px rgba( 181, 71, 27, 0.15 );
+}
+.hello-card-icon { font-size: 22px; }
+.hello-num {
+	margin: 4px 0 0;
+	font-size: 2.2em;
+	font-weight: 800;
+	line-height: 1.1;
+	font-variant-numeric: tabular-nums;
+	background: linear-gradient( 90deg, #e0661f, #c2387a );
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.hello-label {
+	font-size: 0.85em;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	opacity: 0.7;
+}
+
+/* Feed */
+.hello-feed {
+	padding: 20px 22px 8px;
+	border-radius: 18px;
+	box-shadow: inset 0 0 0 1px rgba( 127, 127, 127, 0.18 );
+	animation: hello-up 0.6s 0.55s cubic-bezier( 0.2, 1.2, 0.4, 1 ) both;
+}
+.hello-feed h3 { margin: 0 0 8px; padding: 0; font-size: 1.1em; }
+.hello-feed ol { list-style: none; margin: 0; padding: 0; }
+.hello-feed li {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin: 0;
+	padding: 10px 0;
+	border-top: 1px solid rgba( 127, 127, 127, 0.15 );
+}
+.hello-feed li:first-child { border-top: 0; }
+.hello-avatar {
+	flex: none;
+	display: grid;
+	place-items: center;
+	width: 34px;
+	height: 34px;
+	border-radius: 50%;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+	background: linear-gradient( 135deg, #e0661f, #7b2ff7 );
+}
+.hello-feed-text { flex: 1; min-width: 0; }
+.hello-when { font-size: 0.85em; opacity: 0.6; white-space: nowrap; }
+
+.hello-footnote {
+	margin-top: 14px;
+	font-family: monospace;
+	font-size: 0.8em;
+	opacity: 0.6;
+}
+
+@keyframes hello-float { to { transform: translate( 40px, 30px ) scale( 1.15 ); } }
+@keyframes hello-up { from { opacity: 0; transform: translateY( 18px ); } }
+@keyframes hello-wave {
+	0%, 60%, 100% { transform: rotate( 0 ); }
+	10%, 30% { transform: rotate( 16deg ); }
+	20%, 40% { transform: rotate( -8deg ); }
+}
+
+@media ( prefers-reduced-motion: reduce ) {
+	.hello-hero::before, .hello-hero::after, .hello-wave, .hello-card, .hello-feed { animation: none; }
+}
