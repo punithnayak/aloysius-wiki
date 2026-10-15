@@ -1,0 +1,60 @@
+/* The banner: a moving rainbow */
+.rangoli {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	margin: 0 0 18px;
+	padding: 16px 20px;
+	border-radius: 18px;
+	color: #fff;
+	font-size: 1.1em;
+	font-weight: 700;
+	background: linear-gradient( 90deg, #ff4e50, #f9a826, #2ec4b6, #7b2ff7, #ff4e50 );
+	background-size: 300% 100%;
+	box-shadow: 0 10px 30px rgba( 123, 47, 247, 0.35 );
+	animation: rangoli-flow 8s linear infinite;
+}
+
+/* The flower spins slowly */
+.rangoli-flower {
+	font-size: 1.8em;
+	animation: rangoli-spin 6s linear infinite;
+}
+
+.rangoli-text {
+	flex: 1;
+	text-shadow: 0 1px 3px rgba( 0, 0, 0, 0.3 );
+}
+
+/* The button */
+.rangoli-button {
+	padding: 8px 16px;
+	border: 0;
+	border-radius: 999px;
+	font: inherit;
+	color: #7b2ff7;
+	background: #fff;
+	cursor: pointer;
+	transition: transform 0.2s;
+}
+.rangoli-button:hover {
+	transform: scale( 1.1 ) rotate( -3deg );
+}
+
+/* Each flying flower */
+.rangoli-burst {
+	position: fixed;
+	z-index: 1000;
+	font-size: 26px;
+	pointer-events: none;
+	animation: rangoli-fly 1.5s ease-out forwards;
+}
+
+@keyframes rangoli-flow { to { background-position: 300% 0; } }
+@keyframes rangoli-spin { to { transform: rotate( 360deg ); } }
+@keyframes rangoli-fly {
+	to {
+		opacity: 0;
+		transform: translate( var( --x ), var( --y ) ) rotate( 360deg );
+	}
+}
