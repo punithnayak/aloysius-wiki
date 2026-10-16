@@ -18,6 +18,10 @@ Your own copy of **MediaWiki**, the software that runs Wikipedia, with three ext
 
 [![Open Tutorial 3 in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://shell.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/punithnayak/aloysius-wiki&cloudshell_tutorial=build-extension.md&show=ide%2Cterminal)
 
+**Tutorial 4: talk to Wikipedia with Python.** Type any username and get their edits, favourite pages and busiest hours from the API:
+
+[![Open Tutorial 4 in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://shell.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/punithnayak/aloysius-wiki&cloudshell_tutorial=python.md&show=ide%2Cterminal)
+
 Google Cloud Shell is free with a personal Google account. Some college accounts block it; use your personal Gmail if so.
 
 **Have a GitHub account instead?** Click **Code → Codespaces → Create codespace**. The wiki starts by itself; open the **Ports** tab and click the globe next to 8080.
@@ -54,6 +58,9 @@ workshop/
   Workshop.php    YOUR settings: name, logo, skin, extensions
   logo.png        your logo
   pages/          the demo pages added on first start
+python/
+  wikiuser.py     Tutorial 4: everything about a Wikimedia editor
+  recent_edits.py the 15-line version
 solutions/
   userscript/     the finished Tutorial 2 user script
   Rangoli/        the finished Tutorial 3 extension

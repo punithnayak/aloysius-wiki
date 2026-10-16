@@ -315,5 +315,11 @@ You built a MediaWiki extension from an empty folder: a manifest, a hook, messag
 
 That is the same shape as every extension on Wikipedia. Tomorrow we learn how to send real code to Wikimedia.
 
+**Bonus: talk to Wikipedia with Python.** Run this to open Tutorial 4:
+
+```sh
+cloudshell launch-tutorial python.md
+```
+
 * Learn more: [Manual: Developing extensions](https://www.mediawiki.org/wiki/Manual:Developing_extensions)
 * Every hook you can listen to: [Manual: Hooks](https://www.mediawiki.org/wiki/Manual:Hooks)
