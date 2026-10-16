@@ -24,11 +24,13 @@ If Python says `No module named requests`, run `pip3 install --user requests` an
 
 <walkthrough-editor-open-file filePath="python/wikiuser.py">Open python/wikiuser.py</walkthrough-editor-open-file>
 
-This bigger script asks the API about one person. Try your workshop host:
+This bigger script asks the API about any person, live. Start it:
 
 ```sh
-python3 python/wikiuser.py Punith.nyk
+python3 python/wikiuser.py
 ```
+
+It asks for a **username**. Type `Punith.nyk` (your workshop host) and press Enter. When it asks **Which wiki?**, just press Enter to use the wiki where they edit most.
 
 You'll see:
 * **🌍 Their global profile:** total edits on every Wikimedia wiki
@@ -36,15 +38,19 @@ You'll see:
 * **✏️ Their latest edits:** green for text added, red for removed
 * **🕒 Their habits:** busiest hours and days, and favourite pages
 
+Then it asks for the next username. Keep going, and press Enter on an empty line to stop.
+
 ## Step 3: A very busy editor
 
-This editor has made almost 100,000 edits on nearly 700 wikis:
+Type this username next: `TheSandDoctor`. When it asks **Which wiki?**, type `enwiki`.
+
+This editor has made almost 100,000 edits on nearly 700 wikis.
+
+You can also skip the questions and give everything at once:
 
 ```sh
 python3 python/wikiuser.py TheSandDoctor --wiki enwiki
 ```
-
-`--wiki` picks which wiki to study: `enwiki`, `knwiki`, `commonswiki`, `wikidatawiki` and so on.
 
 Have a Wikimedia account? Look yourself up!
 
